@@ -18,6 +18,7 @@ class ExtendedCalcTests :XCTestCase {
         XCTAssert(calc.calculate(["-2", "*", "-12"]) == 24)
         XCTAssert(calc.calculate(["2", "/", "-12"]) == 0)
         XCTAssert(calc.calculate(["-24", "/", "-12"]) == 2)
+        XCTAssert(calc.calculate(["-24", "/", "-12"]) == 2)
     }
 }
 
