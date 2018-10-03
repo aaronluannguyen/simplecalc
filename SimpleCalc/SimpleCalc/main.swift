@@ -36,7 +36,9 @@ public class Calculator {
                 return 0
             }
             let num:Int = Int(args[0])!
-            if num == 0 {
+            if num < 0 {
+                return 0
+            } else if num == 0 {
                 return 1
             }
             var answer = 1
@@ -60,7 +62,7 @@ public class Calculator {
                 return Int(n1 / n2)
                 
             case "%":
-                return Int(n1 - ((n1 / n2) * n2))
+                return Int(n1 % n2)
                 
             case "*":
                 return Int(n1 * n2)
